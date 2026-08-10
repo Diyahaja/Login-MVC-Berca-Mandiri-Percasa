@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f4f5f7;
+}
+
+/* Background garis diagonal seperti pada gambar referensi */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 16px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #eef0f3 0px,
+        #eef0f3 2px,
+        #f7f8fa 2px,
+        #f7f8fa 40px
+    );
+}
+
+.login-card {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(20, 20, 43, 0.08);
+    padding: 40px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.logo-img {
+    width: 100px;         
+    height: auto;       
+    display: block;
+    margin: 0 auto 24px; 
+    object-fit: contain;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #e2e4e9;
+    border-radius: 10px;
+    background: #f8f9fb;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.input-group input:focus {
+    border-color: #4d8dee;
+    background: #ffffff;
+}
+
+.input-group input::placeholder {
+    color: #a0a4ac;
+}
+
+.password-group .toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #a0a4ac;
+    font-size: 15px;
+    user-select: none;
+}
+
+.forgot-wrapper {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #4d8dee;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.headphone-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(87deg) brightness(118%) contrast(119%);
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 13px;
+    background: #4d8dee;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.15s ease;
+}
+
+.btn-signin:hover {
+    background: #3d7be0;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #666;
+}
+
+.register-link {
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.alert-error {
+    width: 100%;
+    background: #fdecea;
+    border: 1px solid #f5c2c0;
+    color: #c62828;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+
+.alert-error p {
+    margin: 2px 0;
+}
+
+.page-footer {
+    font-size: 12px;
+    color: #8a8f98;
+}
+
+.page-footer a {
+    color: #4d8dee;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
