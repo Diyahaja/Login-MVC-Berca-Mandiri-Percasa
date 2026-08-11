@@ -5,11 +5,11 @@
  */
 
 // ==== Konfigurasi Database ====
-define('DB_HOST', '127.0.0.1');      // host PostgreSQL, biasanya localhost
-define('DB_PORT', '5432');           // port default PostgreSQL
-define('DB_NAME', 'berca_login');    // nama database (buat lewat pgAdmin)
-define('DB_USER', 'postgres');       // username PostgreSQL
-define('DB_PASS', 'isi_password');       // password PostgreSQL
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_PORT', getenv('DB_PORT') ?: '5432');
+define('DB_NAME', getenv('DB_NAME') ?: 'berca');
+define('DB_USER', getenv('DB_USER') ?: 'postgres');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
 // ==== Konfigurasi Aplikasi ====
 define('APP_NAME', 'PT. BERCA MANDIRI PERKASA');
