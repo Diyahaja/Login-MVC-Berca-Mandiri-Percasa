@@ -9,7 +9,7 @@ define('DB_HOST', '127.0.0.1');      // host PostgreSQL, biasanya localhost
 define('DB_PORT', '5432');           // port default PostgreSQL
 define('DB_NAME', 'BMP_database');    // nama database (buat lewat pgAdmin)
 define('DB_USER', 'postgres');       // username PostgreSQL
-define('DB_PASS', 'kerjainaja');       // password PostgreSQL
+define('DB_PASS', 'passowrd_apa');       // password PostgreSQL
 
 // ==== Konfigurasi Aplikasi ====
 define('APP_NAME', 'PT BERCA MANDIRI PERKASA');
